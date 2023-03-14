@@ -1,6 +1,6 @@
 from typing import MutableSequence
 from random import SystemRandom as sr
-from blackjack.player import Player
+from .player import Player
 
 
 class Dealer(Player):
