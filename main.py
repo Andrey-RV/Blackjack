@@ -1,9 +1,5 @@
 from os import system
-from blackjack.utils import get_number_of_players
-from blackjack.score_track import count_points
-from blackjack.player import Player
-from blackjack.dealer import Dealer
-
+from blackjack import Player, Dealer, get_number_of_players, count_points
 
 commom_deck = [11, 11, 11, 11, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7,
                7, 8, 8, 8, 8, 9, 9, 9, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
@@ -33,9 +29,9 @@ def main():
                     break
 
                 players[player].hit(player_number=player+1)
+
                 if players[player].busted():
                     break
-
         system('cls')
 
         for player in players_range:
@@ -49,9 +45,9 @@ def main():
         if play_again.lower() == 'n':
             break
         else:
-            deck = [card for card in commom_deck.copy()
-                    for __ in players_range]
+            deck = [card for card in commom_deck.copy() for __ in players_range]
             dealer.restart_the_game(cards=deck)
+
             for player in players_range:
                 players[player].restart_the_game(cards=deck)
 
