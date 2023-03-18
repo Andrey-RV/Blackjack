@@ -2,11 +2,11 @@ from typing import Sequence
 
 
 def count_points(dealer_score: int, scores: Sequence[int]) -> None:
-    """_Counts the points of the players and the dealer and prints the results of the game._
+    """Count the points of the players and the dealer and prints the results of the game.
 
     Args:
-        dealer_score (int): _The dealer's score._
-        scores (Sequence[int]): _A sequence with the scores of the players._
+        dealer_score (int): The dealer's score.
+        scores (Sequence[int]): A sequence with the scores of the players.
     """
     players = len(scores)
     winners: list[int] = []

@@ -1,8 +1,8 @@
 def get_number_of_players() -> range:
-    """_Get the number of players from the user and returns a range iterable with the number of players._
+    """Get the number of players from the user and returns a range iterable with the number of players.
 
     Returns:
-        int: _The number of players._
+        int: The number of players.
     """
     str_num_of_player = input("How many players? ")
 
