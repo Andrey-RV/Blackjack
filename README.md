@@ -2,7 +2,7 @@
 This is a Python implementation of the classic card game Blackjack, also known as 21. The program does not have a graphical user interface, so you need to enter commands like "halt" and "stop" through the terminal. The game will display the player's hand and other relevant information in the terminal as well
 
 ## Requirements
-To run the program, you'll need Python 3.9 to avoid errors about Type Hints from PEP 585. Some annotations from the typing module that are not yet part of Python's standard library are also used. To play the game, download or clone the repository, navigate to the project directory, and run the blackjack.py file using Python:
+To run the program, you'll need Python 3.9 to avoid errors about Type Hints from PEP 585. To play the game, download or clone the repository, navigate to the project directory, and run the blackjack.py file using Python:
 
 ```
 python main.py
