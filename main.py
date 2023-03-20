@@ -20,9 +20,9 @@ def main():
             dealer.show_dealer_hand_and_score()
 
             while True:
-                dug = input("Hit or stand? 'h' or 's': ")
+                dug = input("Hit or stand? 'h' or 's': ").lower()
 
-                if len(dug) > 1:
+                if dug not in ['h', 's']:
                     print("Please enter 'h' or 's'.")
                     continue
                 if dug.lower() == 's':
