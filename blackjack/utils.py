@@ -4,12 +4,16 @@ def get_number_of_players() -> range:
     Returns:
         int: The number of players.
     """
-    str_num_of_player = input("How many players? ")
-
-    if not str_num_of_player.isdigit():
-        print("Please enter a number.")
+    while True:
         str_num_of_player = input("How many players? ")
-    if int(str_num_of_player) < 1:
-        print("Please enter a number greater than 0.")
-        str_num_of_player = input("How many players? ")
+        if not str_num_of_player.isdigit():
+            print("Please enter an integer number.")
+            continue
+        if '.' in str_num_of_player:
+            print("Please enter an integer number.")
+            continue
+        if int(str_num_of_player) < 1:
+            print("Please enter a number greater than 0.")
+            continue
+        break
     return range(int(str_num_of_player))
